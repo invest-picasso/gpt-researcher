@@ -9,9 +9,7 @@ python-dotenv
 pyyaml
 selenium
 webdriver-manager
-uvicorn
 pydantic
-fastapi
 python-multipart
 markdown
 langchain
