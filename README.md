@@ -68,6 +68,16 @@ Please see [here](https://docs.tavily.com/docs/gpt-researcher/getting-started) f
 - How-To examples (demos, integrations, docker support)
 - Reference (full API docs)
 
+## Quickstart: Docker
+
+Requires Docker and Docker Compose to be installed on your machine.
+
+```shell
+export OPENAI_API_KEY=<key>
+export TAVILY_API_KEY=<key>
+docker-compose up
+```
+
 ## Quickstart
 > **Step 0** - Install Python 3.11 or later. [See here](https://www.tutorialsteacher.com/python/install-python) for a step-by-step guide.
 
@@ -164,9 +174,11 @@ python -m uvicorn main:app --reload
 
 <br />
 
-> **Step 6** - Visit http://localhost:8000 in any web browser and explore your research!
+> **Step 6** - Run `python cli.py <query> --report_type <report_type>` to generate a research report. For example:
 
-To learn how to get started with Docker or to learn more about the features and services check out the [documentation](https://docs.tavily.com) page.
+```bash
+python cli.py "What is the capital of France?" --report_type research
+```
 
 ## 🚀 Contributing
 We highly welcome contributions! Please check out [contributing](CONTRIBUTING.md) if you're interested.
